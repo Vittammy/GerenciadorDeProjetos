@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    transform: translateY(45%);
+    background-color: gray;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 14, 14);
+    flex-direction: column;
+    padding: 3rem;
+    width: 20%;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+h1 {
+    border-bottom: 1px solid white;
+    padding: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 90%;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    background-color: rgb(220, 236, 250);
+}
+
+button {
+    margin-top: 1.5rem;
+    width: 105%;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    padding: 0.5rem;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(0, 88, 0);
+}

@@ -1,0 +1,214 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GERAL <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+body {
+    display: flex;
+    justify-content: center;
+    transform: translateY(5%);
+    background-color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input, select {
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem;
+    width: 100%;
+}
+
+input:focus, 
+select:focus {
+    outline: none;
+    background-color: rgb(220, 236, 250);
+}
+
+.geral {
+    background-color: rgb(14, 14, 14);
+    width: 90%;
+    padding: 3rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.divisao {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORMULÁRIO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 85%;
+}
+
+.cadastro,
+.edicao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.tabela,
+.edicao {
+    margin-top: 1.5rem;
+}
+
+.cadastro {
+    margin-top: 3rem;
+}
+
+.edicao {
+    width: 50%;
+    transform: translateX(40%);
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BOTÕES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.btn_salvar,
+.btn_inicio,
+.btn_editar,
+.btn_deletar,
+.btn_pesquisar {
+    transition: background-color 0.3s;
+    border: none;
+    color: white;
+}
+
+.btn_salvar,
+.btn_editar,
+.btn_deletar {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.btn_salvar {
+    margin-top: 0.8rem;
+    width: 102.5%;
+    background-color: green;
+}
+
+.btn_salvar:hover {
+    background-color: rgb(0, 88, 0);
+}
+
+.btn_inicio {
+    padding: 0.7rem;
+    background-color: rgb(180, 0, 0);
+    border-radius: 50px;
+    width: 15%;
+}
+
+.btn_inicio:hover {
+    background-color: rgb(105, 0, 0);
+}
+
+.btn_editar {
+    background-color: rgb(146, 146, 0);
+}
+
+.btn_editar:hover {
+    background-color: rgb(85, 85, 0);
+}
+
+.btn_deletar {
+    background-color: rgb(180, 0, 0);
+}
+
+.btn_deletar:hover {
+    background-color: rgb(105, 0, 0);
+}
+
+.btn_pesquisar {
+    background-color: green;
+    border-radius: 50px;
+    width: 10%;
+}
+
+.btn_pesquisar:hover {
+    background-color: rgb(0, 88, 0);
+}
+
+.acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> TABELA <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.tabela {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+table {
+    background-color: rgb(231, 244, 255);
+    padding: 0.1rem;
+    border-radius: 8px;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+thead {
+    background-color: rgb(105, 0, 0);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(107, 107, 107);
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(170, 170, 170);
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+tbody tr:hover {
+    background-color: rgb(94, 59, 59);
+    color: white;
+}
+
+th, td {
+    border-radius: 5px;
+    padding: 0.8rem;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PESQUISAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.pesquisar {
+    padding: 0.7rem;
+    width: 30%;
+}
+
+.form_pesquisar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+}
